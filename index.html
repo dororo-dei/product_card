@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>상품화면</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      /* 상품박스 */
+      .product-box {
+        /* background-color: rgb(255, 222, 222); */
+        width: 420px;
+        padding: 20px;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+        /* text-align: center; */
+        margin: 100px auto;
+      }
+      /* 이미지 */
+      img {
+        width: 100%;
+        display: block;
+        border-radius: 10px;
+      }
+      .cart {
+        width: 100%;
+        padding: 3px;
+        border-radius: 8px;
+        margin-top: 10px;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: 0.2s;
+      }
+      .cart:hover {
+        background-color: #e7e7e7;
+      }
+      .name {
+        text-align: left;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      .price s {
+        color: grey;
+        font-size: 15px;
+      }
+      .price p span {
+        color: red;
+      }
+      .price p {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 상품박스 -->
+    <div class="product-box">
+      <!-- 이미지 -->
+      <img src="/말콤.png" alt="퍼퓸 모이스트필 바디워시" class="product-img" />
+      <!-- 담기버튼 -->
+      <button class="cart">
+        <i class="fa-solid fa-cart-shopping"></i> <span>담기</span>
+      </button>
+      <!-- 상품명 -->
+      <div class="name">
+        <p>[말콤] 퍼퓸 모이스트필 바디워시</p>
+        <p>1000mL 2종 (택1)</p>
+      </div>
+      <!-- 가격 -->
+      <div class="price">
+        <s>32,000원</s>
+        <p><span>59%</span> 12,900원</p>
+      </div>
+    </div>
+  </body>
+</html>
